@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Sổ Tay Toàn Diện 250 Câu Ester - Lipid (2026)</title>
+<style>
+  :root {
+    --primary: #1d4ed8;
+    --primary-light: #eff6ff;
+    --danger: #b91c1c;
+    --danger-light: #fef2f2;
+    --success: #047857;
+    --success-light: #ecfdf5;
+    --warning: #b45309;
+    --warning-light: #fffbeb;
+    --text: #0f172a;
+    --border: #cbd5e1;
+    --bg: #f1f5f9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+    margin: 0;
+    padding: 12px;
+    font-size: 15px;
+  }
+  .container {
+    max-width: 980px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+  header {
+    text-align: center;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    color: var(--primary);
+    font-size: 1.45rem;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+  }
+  .subtitle {
+    color: #475569;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .search-box {
+    position: sticky;
+    top: 8px;
+    z-index: 100;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 16px;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+  }
+  .nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .nav-pills a {
+    text-decoration: none;
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #bfdbfe;
+  }
+  section { margin-bottom: 28px; }
+  h2 {
+    background: linear-gradient(90deg, #1e40af, #2563eb);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    margin-top: 24px;
+    margin-bottom: 14px;
+  }
+  h3 {
+    color: #1e3a8a;
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+  .table-wrap {
+    overflow-x: auto;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 520px;
+    font-size: 0.92rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 9px 11px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    font-weight: 700;
+  }
+  tr:nth-child(even) { background-color: #f8fafc; }
+  .chem {
+    font-weight: 700;
+    color: var(--danger);
+    font-family: "Segoe UI", Roboto, sans-serif;
+  }
+  .eq {
+    background: #f8fafc;
+    border: 1px dashed #94a3b8;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 10px 0;
+    overflow-x: auto;
+    color: #0f172a;
+  }
+  .box-tip {
+    background: var(--warning-light);
+    border-left: 5px solid #f59e0b;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .box-trap {
+    background: var(--danger-light);
+    border-left: 5px solid var(--danger);
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .box-formula {
+    background: var(--success-light);
+    border-left: 5px solid var(--success);
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    background: var(--primary);
+  }
+  .badge-red { background: var(--danger); }
+  .badge-green { background: var(--success); }
+  ul, ol { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+  sup { top: -0.5em; }
+  sub { bottom: -0.25em; }
+
+  /* ========== AI CHAT WIDGET ========== */
+  .ai-fab {
+    position: fixed; bottom: 20px; right: 20px;
+    width: 58px; height: 58px; border-radius: 50%;
+    background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+    color: #fff; border: none; font-size: 26px; cursor: pointer;
+    box-shadow: 0 6px 20px rgba(29,78,216,.45);
+    z-index: 999; transition: transform .2s;
+  }
+  .ai-fab:hover { transform: scale(1.08); }
+  .ai-fab.hidden { display: none; }
+
+  .ai-panel {
+    position: fixed; bottom: 20px; right: 20px;
+    width: 400px; max-width: calc(100vw - 24px);
+    height: 600px; max-height: calc(100vh - 40px);
+    background: #fff; border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,.22);
+    display: none; flex-direction: column;
+    z-index: 1000; overflow: hidden;
+    border: 1px solid #e2e8f0;
+  }
+  .ai-panel.open { display: flex; }
+
+  .ai-header {
+    background: linear-gradient(90deg, #1e40af, #7c3aed);
+    color: #fff; padding: 12px 14px;
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 700; font-size: .95rem;
+  }
+  .ai-header .ai-title { flex: 1; }
+  .ai-header button {
+    background: rgba(255,255,255,.18); color: #fff;
+    border: none; width: 30px; height: 30px; border-radius: 8px;
+    cursor: pointer; font-size: 15px;
+  }
+  .ai-header button:hover { background: rgba(255,255,255,.3); }
+
+  .ai-msgs {
+    flex: 1; overflow-y: auto; padding: 14px;
+    background: #f8fafc; font-size: .9rem; line-height: 1.55;
+  }
+  .ai-msg { margin-bottom: 12px; display: flex; gap: 8px; }
+  .ai-msg .avatar {
+    width: 28px; height: 28px; border-radius: 50%;
+    flex-shrink: 0; display: grid; place-items: center;
+    font-size: 14px; color: #fff;
+  }
+  .ai-msg.user .avatar { background: #1d4ed8; }
+  .ai-msg.bot  .avatar { background: #7c3aed; }
+  .ai-msg .bubble {
+    background: #fff; padding: 9px 12px; border-radius: 12px;
+    border: 1px solid #e2e8f0; max-width: 85%;
+    word-wrap: break-word; overflow-wrap: anywhere;
+  }
+  .ai-msg.user .bubble { background: #dbeafe; border-color: #bfdbfe; }
+  .ai-msg.bot  .bubble b { color: #1e40af; }
+  .ai-msg.bot  .bubble code {
+    background: #f1f5f9; padding: 1px 5px; border-radius: 4px;
+    font-family: "Consolas", monospace; font-size: .85em;
+    color: #b91c1c;
+  }
+  .ai-msg.bot .bubble ul { margin: 4px 0; padding-left: 18px; }
+
+  .ai-input-wrap {
+    display: flex; gap: 6px; padding: 10px;
+    border-top: 1px solid #e2e8f0; background: #fff;
+  }
+  .ai-input-wrap textarea {
+    flex: 1; resize: none; border: 1px solid #cbd5e1;
+    border-radius: 10px; padding: 8px 10px; font-size: .9rem;
+    font-family: inherit; outline: none; max-height: 100px;
+  }
+  .ai-input-wrap textarea:focus { border-color: #1d4ed8; }
+  .ai-input-wrap button {
+    background: #1d4ed8; color: #fff; border: none;
+    border-radius: 10px; padding: 0 14px; cursor: pointer;
+    font-weight: 600; font-size: .9rem;
+  }
+  .ai-input-wrap button:disabled { opacity: .5; cursor: not-allowed; }
+
+  .ai-settings {
+    padding: 12px; background: #fffbeb;
+    border-bottom: 1px solid #fde68a; font-size: .85rem;
+    display: none;
+  }
+  .ai-settings.open { display: block; }
+  .ai-settings input {
+    width: 100%; padding: 7px 10px; border: 1px solid #cbd5e1;
+    border-radius: 8px; margin: 6px 0; font-size: .85rem;
+    font-family: inherit;
+  }
+  .ai-settings button {
+    background: #047857; color: #fff; border: none;
+    padding: 6px 12px; border-radius: 8px; cursor: pointer;
+    font-size: .85rem; font-weight: 600;
+  }
+  .ai-settings a { color: #1d4ed8; }
+
+  .ai-quick {
+    display: flex; gap: 6px; padding: 8px 10px 0;
+    flex-wrap: wrap; background: #f8fafc;
+  }
+  .ai-quick button {
+    background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe;
+    border-radius: 14px; padding: 4px 10px; font-size: .78rem;
+    cursor: pointer; font-weight: 600;
+  }
+  .ai-quick button:hover { background: #dbeafe; }
+
+  .ai-typing { display: inline-flex; gap: 3px; }
+  .ai-typing span {
+    width: 6px; height: 6px; border-radius: 50%; background: #7c3aed;
+    animation: ai-bounce 1.2s infinite;
+  }
+  .ai-typing span:nth-child(2) { animation-delay: .15s; }
+  .ai-typing span:nth-child(3) { animation-delay: .3s; }
+  @keyframes ai-bounce { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-6px)} }
+
+  #aiSelBtn {
+    position: absolute; z-index: 998; display: none;
+    background: #7c3aed; color: #fff; border: none;
+    padding: 5px 11px; border-radius: 16px; font-size: .78rem;
+    font-weight: 700; cursor: pointer;
+    box-shadow: 0 4px 12px rgba(124,58,237,.4);
+  }
+  #aiSelBtn:hover { background: #6d28d9; }
+
+  @media (max-width: 500px) {
+    .ai-panel {
+      width: 100vw; height: 100vh; max-height: 100vh;
+      bottom: 0; right: 0; border-radius: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>SỔ TAY TỔNG ÔN TOÀN DIỆN 250 CÂU ESTER – LIPID (2026)</h1>
+    <p class="subtitle">Hệ thống hóa 100% Lý thuyết – Bẫy Đúng/Sai – Công thức giải nhanh Phần I, II, III</p>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" onkeyup="filterContent()" placeholder="🔍 Nhập từ khóa để tra nhanh (VD: chuối, aspirin, omega, 884, IR, xà phòng...)">
+  </div>
+
+  <div class="nav-pills">
+    <a href="#sec1">1. Danh pháp & Mùi hương</a>
+    <a href="#sec2">2. Phản ứng & Bẫy NaOH</a>
+    <a href="#sec3">3. Thuốc & Hợp chất thực tế</a>
+    <a href="#sec4">4. Phổ IR & MS</a>
+    <a href="#sec5">5. Chất béo & Omega-3,6,9</a>
+    <a href="#sec6">6. Xà phòng & Giặt rửa</a>
+    <a href="#sec7">7. Thí nghiệm & Dụng cụ</a>
+    <a href="#sec8">8. Công thức Giải toán</a>
+  </div>
+
+  <!-- PHẦN 1 -->
+  <section id="sec1" class="searchable">
+    <h2>1. DANH PHÁP, ĐỒNG PHÂN & TÍNH CHẤT VẬT LÝ CỦA ESTER</h2>
+
+    <h3>A. Công thức chung & Số đồng phân Ester</h3>
+    <ul>
+      <li><b>Ester no, đơn chức, mạch hở:</b> <span class="chem">C<sub>n</sub>H<sub>2n</sub>O<sub>2</sub> (n ≥ 2)</span> — Độ bất bão hòa <b>k = 1</b> (có 1 liên kết π trong nhóm chức <span class="chem">–COO–</span>). <i>(Bẫy: Nếu ghi n ≥ 1 là của carboxylic acid).</i></li>
+      <li><b>Quy tắc gọi tên (R–COO–R'):</b> <b>Tên gốc R' (từ alcohol) + Tên gốc RCOO (từ acid, đuôi <i>-ate</i>)</b>.</li>
+      <li><b>Công thức tính nhanh số đồng phân ester no, đơn chức, mạch hở:</b> <b>2<sup>n – 2</sup></b> (với 2 ≤ n ≤ 4):
+        <ul>
+          <li><b>C<sub>2</sub>H<sub>4</sub>O<sub>2</sub> (M = 60):</b> Có <b>1</b> ester duy nhất là <span class="chem">HCOOCH<sub>3</sub></span> (methyl formate).</li>
+          <li><b>C<sub>3</sub>H<sub>6</sub>O<sub>2</sub> (M = 74):</b> Có <b>2</b> ester là <span class="chem">HCOOC<sub>2</sub>H<sub>5</sub></span> (ethyl formate) và <span class="chem">CH<sub>3</sub>COOCH<sub>3</sub></span> (methyl acetate). <i>(Lưu ý: C<sub>2</sub>H<sub>5</sub>COOH cũng có M = 74).</i></li>
+          <li><b>C<sub>4</sub>H<sub>8</sub>O<sub>2</sub> (M = 88):</b> Có <b>4</b> đồng phân cấu tạo ester:
+            <ol>
+              <li><span class="chem">HCOOCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></span>: propyl formate (tạo từ alcohol bậc I).</li>
+              <li><span class="chem">HCOOCH(CH<sub>3</sub>)<sub>2</sub></span>: isopropyl formate (có trong cà phê Arabica, thủy phân tạo <b>propan-2-ol là alcohol bậc II</b> và muối formate có phản ứng tráng bạc).</li>
+              <li><span class="chem">CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub></span>: ethyl acetate (chất lỏng mùi dễ chịu, làm dung môi sơn móng tay; tạo ra <span class="chem">C<sub>2</sub>H<sub>5</sub>OH</span> lên men giấm trực tiếp thành <span class="chem">CH<sub>3</sub>COOH</span>).</li>
+              <li><span class="chem">CH<sub>3</sub>CH<sub>2</sub>COOCH<sub>3</sub></span>: methyl propionate (thủy phân tạo muối <span class="chem">C<sub>2</sub>H<sub>5</sub>COONa</span> hay <span class="chem">C<sub>3</sub>H<sub>5</sub>O<sub>2</sub>Na</span> và <span class="chem">CH<sub>3</sub>OH</span>).</li>
+            </ol>
+          </li>
+          <li><b>Ester C<sub>5</sub>H<sub>10</sub>O<sub>2</sub> (M = 102) tạo muối acetate (<span class="chem">CH<sub>3</sub>COOR'</span> với R' là <span class="chem">–C<sub>3</sub>H<sub>7</sub></span>):</b> Có <b>2</b> chất là propyl acetate (<span class="chem">CH<sub>3</sub>COOCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></span>) và isopropyl acetate (<span class="chem">CH<sub>3</sub>COOCH(CH<sub>3</sub>)<sub>2</sub></span>).</li>
+          <li><b>Ester mạch hở C<sub>4</sub>H<sub>6</sub>O<sub>2</sub> (M = 86) tác dụng với NaOH thu được muối và alcohol:</b> Có <b>2</b> công thức cấu tạo là methyl acrylate (<span class="chem">CH<sub>2</sub>=CH–COOCH<sub>3</sub></span>) và allyl formate (<span class="chem">HCOOCH<sub>2</sub>–CH=CH<sub>2</sub></span>). <i>(Các đồng phân vinyl acetate <span class="chem">CH<sub>3</sub>COOCH=CH<sub>2</sub></span> và <span class="chem">HCOOCH=CH–CH<sub>3</sub></span> sinh ra aldehyde hoặc ketone chứ không sinh ra alcohol).</i></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>B. Bảng Mùi hương & Các Ester Đặc biệt trong Đề 2026</h3>
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Tên Ester</th>
+          <th>Công thức Cấu tạo & Phân tử</th>
+          <th>M</th>
+          <th>Mùi hương / Đặc điểm hay hỏi trong đề</th>
+        </tr>
+        <tr>
+          <td><b>Isoamyl acetate</b></td>
+          <td><span class="chem">CH<sub>3</sub>COOCH<sub>2</sub>CH<sub>2</sub>CH(CH<sub>3</sub>)<sub>2</sub></span><br>(<span class="chem">C<sub>7</sub>H<sub>14</sub>O<sub>2</sub></span>)</td>
+          <td><b>130</b></td>
+          <td>Mùi <b>chuối chín</b> (dầu chuối). Tạo từ acetic acid và isoamyl alcohol (3-methylbutan-1-ol).</td>
+        </tr>
+        <tr>
+          <td><b>Benzyl acetate</b></td>
+          <td><span class="chem">CH<sub>3</sub>COOCH<sub>2</sub>C<sub>6</sub>H<sub>5</sub></span><br>(<span class="chem">C<sub>9</sub>H<sub>10</sub>O<sub>2</sub></span>)</td>
+          <td><b>150</b></td>
+          <td>Mùi <b>hoa nhài</b>. Là ester của alcohol (tỉ lệ NaOH 1:1).<br><i>Khác với Phenyl acetate (<span class="chem">CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub></span>).</i></td>
+        </tr>
+        <tr>
+          <td><b>Benzyl hexanoate</b></td>
+          <td><span class="chem">CH<sub>3</sub>[CH<sub>2</sub>]<sub>4</sub>COOCH<sub>2</sub>C<sub>6</sub>H<sub>5</sub></span><br>(<span class="chem">C<sub>13</sub>H<sub>18</sub>O<sub>2</sub></span>)</td>
+          <td><b>206</b></td>
+          <td>Mùi <b>hoa nhài</b>. Điều chế từ hexanoic acid (M = 116) và benzyl alcohol (M = 108).</td>
+        </tr>
+        <tr>
+          <td><b>Ethyl propionate</b><br><b>Ethyl butyrate</b></td>
+          <td><span class="chem">CH<sub>3</sub>CH<sub>2</sub>COOC<sub>2</sub>H<sub>5</sub></span> (<span class="chem">C<sub>5</sub>H<sub>10</sub>O<sub>2</sub></span>)<br><span class="chem">CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>COOC<sub>2</sub>H<sub>5</sub></span> (<span class="chem">C<sub>6</sub>H<sub>12</sub>O<sub>2</sub></span>)</td>
+          <td><b>102</b><br><b>116</b></td>
+          <td>Mùi <b>dứa chín</b>.</td>
+        </tr>
+        <tr>
+          <td><b>Methyl butanoate</b></td>
+          <td><span class="chem">CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>COOCH<sub>3</sub></span> (<span class="chem">C<sub>5</sub>H<sub>10</sub>O<sub>2</sub></span>)</td>
+          <td><b>102</b></td>
+          <td>Mùi <b>quả táo</b>. Thủy phân tạo sodium butanoate và methanol.</td>
+        </tr>
+        <tr>
+          <td><b>Propyl ethanoate</b><br>(Propyl acetate)</td>
+          <td><span class="chem">CH<sub>3</sub>COOCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></span> (<span class="chem">C<sub>5</sub>H<sub>10</sub>O<sub>2</sub></span>)</td>
+          <td><b>102</b></td>
+          <td>Mùi <b>quả lê</b>.</td>
+        </tr>
+        <tr>
+          <td><b>Butyl acetate</b></td>
+          <td><span class="chem">CH<sub>3</sub>COOCH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></span> (<span class="chem">C<sub>6</sub>H<sub>12</sub>O<sub>2</sub></span>)</td>
+          <td><b>116</b></td>
+          <td>Có <b>6 nguyên tử C</b>. Dùng làm dung môi pha sơn.</td>
+        </tr>
+        <tr>
+          <td><b>Ethyl benzoate</b></td>
+          <td><span class="chem">C<sub>6</sub>H<sub>5</sub>COOC<sub>2</sub>H<sub>5</sub></span> (<span class="chem">C<sub>9</sub>H<sub>10</sub>O<sub>2</sub></span>)</td>
+          <td><b>150</b></td>
+          <td>Mùi <b>quả anh đào (cherry)</b>. Tác dụng với NaOH tỉ lệ 1:1.</td>
+        </tr>
+        <tr>
+          <td><b>Geranyl acetate</b></td>
+          <td><span class="chem">CH<sub>3</sub>COOC<sub>10</sub>H<sub>17</sub></span> (<span class="chem">C<sub>12</sub>H<sub>20</sub>O<sub>2</sub></span>)</td>
+          <td><b>196</b></td>
+          <td>Mùi <b>hoa hồng</b>. Không no (có 2 nối đôi C=C + 1 nhóm COO). Tổng số nguyên tử trong phân tử = <b>34</b>.</td>
+        </tr>
+        <tr>
+          <td><b>Linalyl acetate</b></td>
+          <td><span class="chem">CH<sub>3</sub>COOC<sub>10</sub>H<sub>17</sub></span> (<span class="chem">C<sub>12</sub>H<sub>20</sub>O<sub>2</sub></span>)</td>
+          <td><b>196</b></td>
+          <td>Tinh dầu <b>cam, hoa oải hương</b>. Cộng tối đa 2H<sub>2</sub> tạo ra ester no có công thức <span class="chem">C<sub>12</sub>H<sub>24</sub>O<sub>2</sub></span>. Không có đp hình học.</td>
+        </tr>
+        <tr>
+          <td><b>Methyl cinnamate</b></td>
+          <td><span class="chem">C<sub>6</sub>H<sub>5</sub>–CH=CH–COOCH<sub>3</sub></span><br>(<span class="chem">C<sub>10</sub>H<sub>10</sub>O<sub>2</sub></span>)</td>
+          <td><b>162</b></td>
+          <td>Mùi <b>dâu tây (strawberry)</b>. Có <b>đồng phân hình học</b> (cis/trans). Tác dụng với NaOH tỉ lệ <b>1:1</b>. Điều chế từ cinnamic acid (M = 148) + CH<sub>3</sub>OH.</td>
+        </tr>
+        <tr>
+          <td><b>Methyl methacrylate</b></td>
+          <td><span class="chem">CH<sub>2</sub>=C(CH<sub>3</sub>)–COOCH<sub>3</sub></span><br>(<span class="chem">C<sub>5</sub>H<sub>8</sub>O<sub>2</sub></span>)</td>
+          <td><b>100</b></td>
+          <td>Trùng hợp tạo <b>thủy tinh hữu cơ</b> (plexiglas / PMMA). Có <b>2 liên kết π</b> và <b>13 liên kết σ</b>. Tạo từ acid mạch nhánh và <span class="chem">CH<sub>3</sub>OH</span> (cực độc, gây mù/tử vong).</td>
+        </tr>
+        <tr>
+          <td><b>Propyl tiglate</b></td>
+          <td><span class="chem">CH<sub>3</sub>CH=C(CH<sub>3</sub>)COOCH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></span><br>(<span class="chem">C<sub>8</sub>H<sub>14</sub>O<sub>2</sub></span>)</td>
+          <td><b>142</b></td>
+          <td>Mùi táo, <b>có đồng phân hình học</b>, thủy phân thu được propan-1-ol (alcohol bậc I). <i>(Bẫy đề ghi C<sub>8</sub>H<sub>16</sub>O<sub>2</sub> là Sai).</i></td>
+        </tr>
+        <tr>
+          <td><b>Isopropyl myristate (IPM)</b></td>
+          <td><span class="chem">C<sub>13</sub>H<sub>27</sub>COOCH(CH<sub>3</sub>)<sub>2</sub></span><br>(<span class="chem">C<sub>17</sub>H<sub>34</sub>O<sub>2</sub></span>)</td>
+          <td><b>270</b></td>
+          <td>Dùng trong kem dưỡng da. Tạo từ myristic acid (<span class="chem">C<sub>13</sub>H<sub>27</sub>COOH</span>, 14C) và isopropyl alcohol. <i>(Không phải là chất béo vì không tạo từ glycerol).</i></td>
+        </tr>
+      </table>
+    </div>
+
+    <h3>C. Quy luật Nhiệt độ sôi & Độ tan</h3>
+    <div class="box-formula">
+      <b>Thứ tự Nhiệt độ sôi (cùng số C hoặc M tương đương):</b><br>
+      <span class="chem">Muối Carboxylate &gt; Carboxylic Acid &gt; Alcohol &gt; Ester &gt; Hydrocarbon (Alkane/Alkene)</span><br>
+      <i>Giải thích:</i> Acid và Alcohol tạo được liên kết hydrogen liên phân tử; Ester <b>không</b> tạo được liên kết hydrogen liên phân tử nên có nhiệt độ sôi thấp hơn hẳn Acid và Alcohol.
+    </div>
+    <ul>
+      <li><b>Bộ số liệu nhiệt độ sôi kinh điển xuất hiện lặp lại trong đề:</b>
+        <ul>
+          <li>Propanoic acid (<span class="chem">CH<sub>3</sub>CH<sub>2</sub>COOH</span>, M=74): <b>141°C</b> (hoặc 141,2°C)</li>
+          <li>Acetic acid (<span class="chem">CH<sub>3</sub>COOH</span>, M=60): <b>118,2°C</b></li>
+          <li>Propan-1-ol (<span class="chem">CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>OH</span>, M=60): <b>97,2°C</b> (hoặc 117,7°C với butan-1-ol)</li>
+          <li>Ethanol (<span class="chem">C<sub>2</sub>H<sub>5</sub>OH</span>, M=46): <b>78,3°C</b> &nbsp;|&nbsp; Methanol (<span class="chem">CH<sub>3</sub>OH</span>, M=32): <b>64,7°C</b></li>
+          <li>Ethyl acetate (<span class="chem">CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub></span>, M=88): <b>77,1°C</b></li>
+          <li>Methyl acetate (<span class="chem">CH<sub>3</sub>COOCH<sub>3</sub></span>, M=74): <b>57,1°C</b> (hoặc 57,0°C)</li>
+          <li>Methyl formate (<span class="chem">HCOOCH<sub>3</sub></span>, M=60): <b>31,8°C</b> (hoặc 31,5°C)</li>
+          <li>Butane (<span class="chem">CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></span>, M=58): <b>–1,0°C</b></li>
+        </ul>
+      </li>
+      <li><b>Quy luật Độ tan:</b> Ester là chất lỏng hoặc rắn ở điều kiện thường (không có chất khí), <b>rất ít tan trong nước và nhẹ hơn nước</b> (nổi lên trên). Cùng dãy đồng đẳng, <b>phân tử khối M (số nguyên tử C) càng lớn thì độ tan trong nước càng nhỏ</b>.</li>
+    </ul>
+  </section>
+
+  <!-- PHẦN 2 -->
+  <section id="sec2" class="searchable">
+    <h2>2. TÍNH CHẤT HÓA HỌC CỦA ESTER & MẸO BẤM TỈ LỆ NaOH</h2>
+
+    <h3>A. So sánh Thủy phân trong Môi trường Acid vs Kiềm</h3>
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Tiêu chí</th>
+          <th>Thủy phân trong Môi trường Acid (<span class="chem">H<sub>2</sub>SO<sub>4</sub> loãng, t°</span>)</th>
+          <th>Thủy phân trong Môi trường Kiềm (<span class="chem">NaOH / KOH, t°</span>)</th>
+        </tr>
+        <tr>
+          <td><b>Tên gọi khác</b></td>
+          <td>Phản ứng nghịch của phản ứng ester hóa</td>
+          <td><b>Phản ứng xà phòng hóa</b></td>
+        </tr>
+        <tr>
+          <td><b>Chiều phản ứng</b></td>
+          <td>Thường là <b>phản ứng thuận nghịch (⇌)</b><br><i>(Bẫy: Ghi "luôn thuận nghịch" là <b>SAI</b> vì ester của vinyl/phenol thủy phân 1 chiều).</i></td>
+          <td>Luôn là <b>phản ứng một chiều (→)</b></td>
+        </tr>
+        <tr>
+          <td><b>Hiện tượng sau khi đun với Ethyl acetate</b></td>
+          <td>Phản ứng không hoàn toàn (còn dư ester) → Chất lỏng vẫn <b>phân thành 2 lớp</b> (thể tích lớp ester phía trên giảm đi một phần).</td>
+          <td>Nếu NaOH dư và đun hoàn toàn → Ester phản ứng hết tạo <span class="chem">CH<sub>3</sub>COONa</span> và <span class="chem">C<sub>2</sub>H<sub>5</sub>OH</span> đều tan trong nước → Tạo <b>dung dịch đồng nhất</b>.</td>
+        </tr>
+        <tr>
+          <td><b>Cơ chế phản ứng</b></td>
+          <td>Nguyên tử H của acid thay thế gốc R'</td>
+          <td><span class="chem">OH<sup>–</sup></span> tấn công vào C=O (phá vỡ liên kết π, tạo liên kết σ), sau đó <b>nhóm –OR' bị thay thế bởi nhóm –OH</b> tạo acid, rồi acid nhường <span class="chem">H<sup>+</sup></span> (theo thuyết Brønsted–Lowry) tạo muối.</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3>B. 3 Trường hợp Thủy phân Đặc biệt & Bẫy Điều chế</h3>
+    <ol>
+      <li><b>Ester thường (<span class="chem">R–COO–R'</span> với R' là gốc alcohol no/không no ở vị trí xa):</b>
+        <ul>
+          <li>Được điều chế trực tiếp từ carboxylic acid và alcohol tương ứng.</li>
+          <li>Thủy phân trong NaOH thu được <b>Muối + Alcohol</b>: <span class="chem">RCOOR' + NaOH → RCOONa + R'OH</span>.</li>
+        </ul>
+      </li>
+      <li><b>Ester của Vinyl (<span class="chem">R–COO–CH=CH–R'</span>):</b>
+        <ul>
+          <li><b>KHÔNG</b> điều chế được từ phản ứng giữa acid và alcohol (mà phải cho acid cộng vào alkyne).</li>
+          <li>Thủy phân sinh ra <b>Muối + Aldehyde</b> (không thu được alcohol):
+            <div class="eq">CH<sub>3</sub>COOCH=CH<sub>2</sub> + NaOH → CH<sub>3</sub>COONa + CH<sub>3</sub>CHO</div>
+          </li>
+          <li><b>Chuỗi phản ứng kinh điển (Câu 68 Phần I & Câu 28 Phần III):</b>
+            <div class="eq">CH<sub>3</sub>COOCH=CH<sub>2</sub> (C<sub>4</sub>H<sub>6</sub>O<sub>2</sub>) + NaOH → CH<sub>3</sub>COONa (Y) + CH<sub>3</sub>CHO (Z)<br>
+            CH<sub>3</sub>CHO + 2[Ag(NH<sub>3</sub>)<sub>2</sub>]OH → CH<sub>3</sub>COONH<sub>4</sub> (T) + 2Ag↓ + 3NH<sub>3</sub> + H<sub>2</sub>O<br>
+            CH<sub>3</sub>COONH<sub>4</sub> (T) + NaOH → CH<sub>3</sub>COONa (Y) + NH<sub>3</sub>↑ + H<sub>2</sub>O</div>
+          </li>
+        </ul>
+      </li>
+      <li><b>Ester của Phenol (<span class="chem">R–COO–C<sub>6</sub>H<sub>5</sub></span> hoặc <span class="chem">R–COO–C<sub>6</sub>H<sub>4</sub>–R'</span>):</b>
+        <ul>
+          <li><b>KHÔNG</b> điều chế được từ carboxylic acid và phenol (phải dùng <b>anhydride acid</b> hoặc <b>acid chloride</b> tác dụng với phenol).</li>
+          <li>Thủy phân trong NaOH dư theo <b>tỉ lệ mol 1 : 2</b>, thu được <b>2 Muối + Nước</b> (không thu được alcohol):
+            <div class="eq">CH<sub>3</sub>COOC<sub>6</sub>H<sub>5</sub> + 2NaOH → CH<sub>3</sub>COONa + C<sub>6</sub>H<sub>5</sub>ONa + H<sub>2</sub>O</div>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="box-tip">
+      <b>⚡ MẸO QUÉT 10 GIÂY ĐẾM TỈ LỆ MOL NaOH:</b><br>
+      • Nhìn thấy cụm <span class="chem">–COOH</span> (acid) hoặc <span class="chem">HO–C<sub>6</sub>H<sub>4</sub>–</span> (phenol): <b>+1 NaOH</b><br>
+      • Nhìn thấy cụm <span class="chem">–COOCH<sub>3</sub></span>, <span class="chem">–COOC<sub>2</sub>H<sub>5</sub></span>, <span class="chem">–COOCH<sub>2</sub>C<sub>6</sub>H<sub>5</sub></span> (có CH<sub>2</sub> chặn trước vòng): <b>+1 NaOH</b><br>
+      • Nhìn thấy cụm <span class="chem">–COOC<sub>6</sub>H<sub>5</sub></span> hoặc <span class="chem">–COOC<sub>6</sub>H<sub>4</sub>–</span> dính liền nhau: <b>+2 NaOH</b><br>
+      • Nhìn thấy cụm <span class="chem">HO–CH<sub>2</sub>–</span> (nhóm OH gắn vào C no = alcohol): <b>0 NaOH</b> (Gạch bỏ luôn!)
+    </div>
+  </section>
+
+  <!-- PHẦN 3 -->
+  <section id="sec3" class="searchable">
+    <h2>3. CÁC HỢP CHẤT THUỐC, POLYMER & THỰC TẾ NÂNG CAO</h2>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Hợp chất</th>
+          <th>Phương trình Điều chế & Phân tử khối (M)</th>
+          <th>Phản ứng với NaOH & Lưu ý Bẫy Đúng/Sai</th>
+        </tr>
+        <tr>
+          <td><b>1. Aspirin</b><br>(Acetylsalicylic acid)<br>Thuốc giảm đau, hạ sốt</td>
+          <td>
+            <b>Salicylic acid</b> (<span class="chem">o-HOC<sub>6</sub>H<sub>4</sub>COOH</span>, C<sub>7</sub>H<sub>6</sub>O<sub>3</sub>, <b>M = 138</b>)<br>
+            + <b>Acetic anhydride</b> (<span class="chem">(CH<sub>3</sub>CO)<sub>2</sub>O</span>, C<sub>4</sub>H<sub>6</sub>O<sub>3</sub>, <b>M = 102</b>)<br>
+            → <b>Aspirin</b> (<span class="chem">o-CH<sub>3</sub>COOC<sub>6</sub>H<sub>4</sub>COOH</span>, C<sub>9</sub>H<sub>8</sub>O<sub>4</sub>, <b>M = 180</b>)<br>
+            + <span class="chem">CH<sub>3</sub>COOH</span> (M = 60)
+          </td>
+          <td>
+            • Tác dụng với NaOH đun nóng theo <b>tỉ lệ mol 1 : 3</b>:<br>
+            <span class="chem">o-CH<sub>3</sub>COOC<sub>6</sub>H<sub>4</sub>COOH + 3NaOH → CH<sub>3</sub>COONa (Y) + o-NaOC<sub>6</sub>H<sub>4</sub>COONa (Z: C<sub>7</sub>H<sub>4</sub>O<sub>3</sub>Na<sub>2</sub>) + 2H<sub>2</sub>O</span>.<br>
+            • <b>Bẫy:</b> Không thể thay acetic anhydride bằng acetic acid. Độ tan của aspirin trong nước <b>thấp hơn</b> salicylic acid (nên làm lạnh trong nước đá để kết tinh aspirin).
+          </td>
+        </tr>
+        <tr>
+          <td><b>2. Methyl salicylate</b><br>Thuốc xoa bóp giảm đau</td>
+          <td>
+            <b>Salicylic acid</b> (<span class="chem">o-HOC<sub>6</sub>H<sub>4</sub>COOH</span>, <b>M = 138</b>)<br>
+            + <b>Methanol</b> (<span class="chem">CH<sub>3</sub>OH</span>, M = 32)<br>
+            ⇌ <b>Methyl salicylate</b> (<span class="chem">o-HOC<sub>6</sub>H<sub>4</sub>COOCH<sub>3</sub></span>, C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>, <b>M = 152</b>) + <span class="chem">H<sub>2</sub>O</span>
+          </td>
+          <td>
+            • Còn nguyên nhóm <span class="chem">–OH</span> phenol và 1 nhóm <span class="chem">–COOCH<sub>3</sub></span> → Tác dụng với NaOH theo <b>tỉ lệ 1 : 2</b>:<br>
+            <span class="chem">HOC<sub>6</sub>H<sub>4</sub>COOCH<sub>3</sub> + 2NaOH → NaOC<sub>6</sub>H<sub>4</sub>COONa (M=182) + CH<sub>3</sub>OH + H<sub>2</sub>O</span>.<br>
+            • Tác dụng với dung dịch <span class="chem">Br<sub>2</sub></span> tối đa theo tỉ lệ <b>1 : 2</b> (do vị trí ortho đã bị chiếm bởi nhóm –COOCH<sub>3</sub>, chỉ còn 1 vị trí ortho và 1 vị trí para so với nhóm –OH).
+          </td>
+        </tr>
+        <tr>
+          <td><b>3. Thuốc DEP</b><br>(Diethyl phthalate)<br>Trị ghẻ, đuổi côn trùng</td>
+          <td>
+            <b><i>o</i>-Xylene</b> (<span class="chem">o-C<sub>6</sub>H<sub>4</sub>(CH<sub>3</sub>)<sub>2</sub></span>, C<sub>8</sub>H<sub>10</sub>, <b>M = 106</b>)<br>
+            → <b>Phthalic acid</b> (<span class="chem">C<sub>6</sub>H<sub>4</sub>(COOH)<sub>2</sub></span>, M = 166)<br>
+            + <span class="chem">2C<sub>2</sub>H<sub>5</sub>OH</span> ⇌ <b>DEP</b> (<span class="chem">C<sub>6</sub>H<sub>4</sub>(COOC<sub>2</sub>H<sub>5</sub>)<sub>2</sub></span>, C<sub>12</sub>H<sub>14</sub>O<sub>4</sub>, <b>M = 222</b>) + <span class="chem">2H<sub>2</sub>O</span>
+          </td>
+          <td>
+            • Là ester 2 chức (đa chức).<br>
+            • Có tổng cộng <b>5 liên kết π</b> (3π trong vòng benzene + 2π ở 2 nhóm COO).<br>
+            • 1 mol DEP + 2 mol NaOH → <b>1 mol muối</b> <span class="chem">C<sub>6</sub>H<sub>4</sub>(COONa)<sub>2</sub></span> + <b>2 mol</b> <span class="chem">C<sub>2</sub>H<sub>5</sub>OH</span>.
+          </td>
+        </tr>
+        <tr>
+          <td><b>4. Saccharose monolaurate</b><br>Chất nhũ hóa, kháng khuẩn</td>
+          <td>
+            <b>Saccharose</b> (<span class="chem">C<sub>12</sub>H<sub>22</sub>O<sub>11</sub></span>, <b>M = 342</b>)<br>
+            + <b>Lauric acid</b> (<span class="chem">C<sub>11</sub>H<sub>23</sub>COOH</span>, C<sub>12</sub>H<sub>24</sub>O<sub>2</sub>, <b>M = 200</b>)<br>
+            → <b>Saccharose monolaurate</b> (<span class="chem">C<sub>24</sub>H<sub>44</sub>O<sub>12</sub></span>, <b>M = 524</b>) + <span class="chem">H<sub>2</sub>O</span>
+          </td>
+          <td>
+            • Là hợp chất <b>tạp chức</b> (có 1 nhóm chức ester và 7 nhóm –OH alcohol).<br>
+            • Chứa liên kết <b>α-1,2-glycoside</b>, không mở vòng được nên <b>KHÔNG</b> phản ứng với thuốc thử Tollens (không tráng bạc).
+          </td>
+        </tr>
+        <tr>
+          <td><b>5. PVA & Tơ Sorona / PET</b></td>
+          <td>
+            • <b>PVA (Poly(vinyl alcohol)):</b> Thủy phân PVAc (<span class="chem">(-CH<sub>2</sub>-CH(OOCCH<sub>3</sub>)-)<sub>n</sub></span>) trong NaOH → <span class="chem">(-CH<sub>2</sub>-CH(OH)-)<sub>n</sub></span> + <span class="chem">nCH<sub>3</sub>COONa</span>.<br>
+            • <b>Tơ Sorona (PTT):</b> Trùng ngưng terephthalic acid + propane-1,3-diol → Mắt xích <span class="chem">-OC-C<sub>6</sub>H<sub>4</sub>-COO-(CH<sub>2</sub>)<sub>3</sub>-O-</span> (có <b>11 nguyên tử C</b>).
+          </td>
+          <td>
+            • Thủy phân PVAc tạo PVA là phản ứng <b>giữ nguyên mạch polymer</b> (bẫy ghi "cắt mạch" là Sai). PVA có nhiều nhóm –OH nên tan được trong nước, dùng làm vỏ thuốc con nhộng.<br>
+            • Tơ Sorona và nhựa PET là polyester nên <b>kém bền</b> trong môi trường kiềm và acid.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- PHẦN 4 -->
+  <section id="sec4" class="searchable">
+    <h2>4. PHỔ HỒNG NGOẠI (IR) & PHỔ KHỐI LƯỢNG (MS)</h2>
+    <ul>
+      <li><b>Phổ Khối lượng (MS):</b> Peak của mảnh ion phân tử <span class="chem">[M<sup>+</sup>]</span> (có giá trị <i>m/z</i> lớn nhất ngoài cùng bên phải) bằng chính <b>Phân tử khối (M)</b> của chất.</li>
+      <li><b>Bảng nhận diện nhanh các Peak đặc trưng trên Phổ Hồng ngoại (IR):</b></li>
+    </ul>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Loại hợp chất</th>
+          <th>Vùng O–H (<span class="chem">3650 – 2500 cm<sup>–1</sup></span>)</th>
+          <th>Vùng C=O (<span class="chem">1780 – 1650 cm<sup>–1</sup></span>)</th>
+          <th>Dấu hiệu nhận diện bằng mắt trên đồ thị IR</th>
+        </tr>
+        <tr>
+          <td><b>Alcohol</b><br>(Ethanol, Isoamyl alcohol)</td>
+          <td><b>CÓ</b> ở <span class="chem">3650 – 3200 cm<sup>–1</sup></span><br>(ví dụ: 3350 cm<sup>–1</sup>)</td>
+          <td><b>KHÔNG CÓ</b></td>
+          <td>Có 1 hố sâu, đáy tròn nhẵn ở vùng ~3350 cm<sup>–1</sup>; vùng 1700 cm<sup>–1</sup> hoàn toàn trống trơn.</td>
+        </tr>
+        <tr>
+          <td><b>Carboxylic Acid</b><br>(Acetic acid, Hexanoic acid)</td>
+          <td><b>CÓ</b> ở <span class="chem">3300 – 2500 cm<sup>–1</sup></span><br>(Dải cực rộng, bè ngang)</td>
+          <td><b>CÓ</b> ở <span class="chem">1725 – 1700 cm<sup>–1</sup></span><br>(Peak rất mạnh, nhọn)</td>
+          <td>Vừa có 1 "cái bầu" rất to bè rộng từ 3300 đến 2500 cm<sup>–1</sup>, vừa có 1 mũi nhọn đâm sâu ở ~1710 cm<sup>–1</sup>.</td>
+        </tr>
+        <tr>
+          <td><b>Ester thuần chức</b><br>(Ethyl acetate, Dầu chuối)</td>
+          <td><b>KHÔNG CÓ</b><br>(Không có peak > 3000 cm<sup>–1</sup>)</td>
+          <td><b>CÓ</b> ở <span class="chem">1750 – 1735 cm<sup>–1</sup></span><br>(và C–O ở 1300 – 1000 cm<sup>–1</sup>)</td>
+          <td>Vùng bên trái (> 3100 cm<sup>–1</sup>) phẳng lặng, nhưng có mũi nhọn sắc ở ~1740 – 1750 cm<sup>–1</sup>.</td>
+        </tr>
+        <tr>
+          <td><b>Ester tạp chức có –OH</b><br>(Methyl salicylate)</td>
+          <td><b>VẪN CÓ</b> ở <span class="chem">3500 – 3200 cm<sup>–1</sup></span> (do còn nhóm –OH phenol)</td>
+          <td><b>CÓ</b> ở <span class="chem">1750 – 1735 cm<sup>–1</sup></span></td>
+          <td>Phân biệt với Salicylic acid nhờ vị trí C=O dịch từ 1700 (acid) lên 1740 cm<sup>–1</sup> (ester).</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- PHẦN 5 -->
+  <section id="sec5" class="searchable">
+    <h2>5. LIPID, CHẤT BÉO, ACID BÉO & OMEGA-3, 6, 9</h2>
+
+    <h3>A. Bảng 4 Chất béo & Acid béo Cốt lõi</h3>
+    <ul>
+      <li><b>Khái niệm:</b> Chất béo là <b>triester của glycerol và acid béo</b>, gọi chung là <b>triglyceride</b>. Khi thủy phân hoàn toàn 1 mol triglyceride bất kì luôn thu được <b>1 mol glycerol</b> (<span class="chem">C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub></span>, M = 92).</li>
+      <li><b>Tính chất vật lý chung:</b> Chất béo nhẹ hơn nước, <b>không tan (hoặc rất ít tan) trong nước</b>, tan nhiều trong dung môi hữu cơ không phân cực (benzene, hexane, chloroform).</li>
+    </ul>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Acid béo tương ứng</th>
+          <th>Tên Chất béo (Triglyceride)</th>
+          <th>Công thức Cấu tạo & Phân tử</th>
+          <th>M (Chất béo)</th>
+          <th>M (Muối –COONa)</th>
+          <th>M (Muối –COOK)</th>
+        </tr>
+        <tr>
+          <td><b>Palmitic acid</b> (16:0, No)<br><span class="chem">C<sub>15</sub>H<sub>31</sub>COOH</span> (M = 256)</td>
+          <td><b>Tripalmitin</b><br>(Trạng thái <b>Rắn</b>, k = 3π)</td>
+          <td><span class="chem">(C<sub>15</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub></span><br>(<span class="chem">C<sub>51</sub>H<sub>98</sub>O<sub>6</sub></span>)</td>
+          <td><b>806</b></td>
+          <td><b>278</b></td>
+          <td><b>294</b></td>
+        </tr>
+        <tr>
+          <td><b>Stearic acid</b> (18:0, No)<br><span class="chem">C<sub>17</sub>H<sub>35</sub>COOH</span> (M = 284)<br><i>(Số liên kết σ = 55)</i></td>
+          <td><b>Tristearin</b><br>(Trạng thái <b>Rắn</b>, k = 3π)<br><i>t<sub>nc</sub> ≈ 54 – 73°C</i></td>
+          <td><span class="chem">(C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub></span><br>(<span class="chem">C<sub>57</sub>H<sub>110</sub>O<sub>6</sub></span>)</td>
+          <td><b>890</b></td>
+          <td><b>306</b></td>
+          <td><b>322</b></td>
+        </tr>
+        <tr>
+          <td><b>Oleic acid</b> (18:1, 1 C=C)<br><span class="chem">C<sub>17</sub>H<sub>33</sub>COOH</span> (M = 282)<br><i>(%C = 76,60%; t<sub>nc</sub> = 14°C)</i></td>
+          <td><b>Triolein</b><br>(Trạng thái <b>Lỏng</b>, <b>k = 6π</b> gồm 3π<sub>C=C</sub> + 3π<sub>COO</sub>)</td>
+          <td><span class="chem">(C<sub>17</sub>H<sub>33</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub></span><br>(<span class="chem">C<sub>57</sub>H<sub>104</sub>O<sub>6</sub></span>)</td>
+          <td><b>884</b></td>
+          <td><b>304</b></td>
+          <td><b>320</b></td>
+        </tr>
+        <tr>
+          <td><b>Linoleic acid</b> (18:2, 2 C=C)<br><span class="chem">C<sub>17</sub>H<sub>31</sub>COOH</span> (M = 280)<br><i>(Có 3π trong phân tử acid)</i></td>
+          <td><b>Trilinolein</b><br>(Trạng thái <b>Lỏng</b>, <b>k = 9π</b> gồm 6π<sub>C=C</sub> + 3π<sub>COO</sub>)</td>
+          <td><span class="chem">(C<sub>17</sub>H<sub>31</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub></span><br>(<span class="chem">C<sub>57</sub>H<sub>98</sub>O<sub>6</sub></span>)</td>
+          <td><b>878</b></td>
+          <td><b>302</b></td>
+          <td><b>318</b></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="box-tip">
+      <b>⚡ Bảng Tra Nhanh Phân Tử Khối (M) Các Triglyceride Hỗn Tạp Trong Đề:</b><br>
+      • <b>1 Oleate + 2 Palmitate:</b> <span class="chem">(C<sub>17</sub>H<sub>33</sub>COO)(C<sub>15</sub>H<sub>31</sub>COO)<sub>2</sub>C<sub>3</sub>H<sub>5</sub></span> → <span class="chem">C<sub>53</sub>H<sub>100</sub>O<sub>6</sub></span> (<b>M = 832</b>)<br>
+      • <b>1 Palmitate + 2 Stearate:</b> <span class="chem">(C<sub>15</sub>H<sub>31</sub>COO)(C<sub>17</sub>H<sub>35</sub>COO)<sub>2</sub>C<sub>3</sub>H<sub>5</sub></span> → <span class="chem">C<sub>55</sub>H<sub>106</sub>O<sub>6</sub></span> (<b>M = 862</b>)<br>
+      • <b>1 Linoleate + 1 Stearate + 1 Palmitate:</b> <span class="chem">C<sub>55</sub>H<sub>102</sub>O<sub>6</sub></span> (<b>M = 858</b>)<br>
+      • <b>1 Palmitate + 1 Oleate + 1 Linoleate:</b> <span class="chem">C<sub>55</sub>H<sub>100</sub>O<sub>6</sub></span> (<b>M = 856</b> — khi + 3H<sub>2</sub> tạo chất béo rắn M = 862 chứ <b>không phải</b> tristearin)<br>
+      • <b>1 Palmitate + 1 Oleate + 1 Linolenate (18:3):</b> <span class="chem">C<sub>55</sub>H<sub>98</sub>O<sub>6</sub></span> (<b>M = 854</b> — cộng tối đa 4H<sub>2</sub>)<br>
+      • <b>1 Stearate + 2 Oleate:</b> <span class="chem">(C<sub>17</sub>H<sub>35</sub>COO)(C<sub>17</sub>H<sub>33</sub>COO)<sub>2</sub>C<sub>3</sub>H<sub>5</sub></span> → <span class="chem">C<sub>57</sub>H<sub>106</sub>O<sub>6</sub></span> (<b>M = 886</b>)<br>
+      • <b>1 Oleate + 1 Linoleate + 1 Linolenate:</b> <span class="chem">C<sub>57</sub>H<sub>98</sub>O<sub>6</sub></span> (<b>M = 878</b>, %H = 11,16%)
+    </div>
+
+    <h3>B. Cách đếm Omega–3, Omega–6, Omega–9</h3>
+    <ul>
+      <li><b>Quy tắc đếm:</b> Đánh số <b>1 từ nguyên tử C của nhóm –CH<sub>3</sub></b> ở tận cùng đuôi mạch (ngược phía với nhóm –COOH). Liên kết đôi <span class="chem">C=C</span> đầu tiên xuất hiện ở vị trí số mấy thì gọi là <b>Omega–n</b> (ω–n).</li>
+      <li><b>Cấu hình không gian:</b> Hầu hết các acid béo không no trong tự nhiên đều có liên kết đôi ở cấu hình <b><i>cis–</i></b> (dạng gấp khúc làm giảm tương tác van der Waals → nhiệt độ nóng chảy thấp, ở thể lỏng).</li>
+    </ul>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Nhóm Omega</th>
+          <th>Tên Acid béo tiêu biểu</th>
+          <th>Kí hiệu (Số C : Số C=C)</th>
+          <th>Công thức Phân tử</th>
+          <th>Đặc điểm nhận dạng trên hình vẽ</th>
+        </tr>
+        <tr>
+          <td><span class="badge">Omega–9</span></td>
+          <td><b>Oleic acid</b></td>
+          <td>18 : 1</td>
+          <td><span class="chem">C<sub>18</sub>H<sub>34</sub>O<sub>2</sub></span><br>(<span class="chem">C<sub>17</sub>H<sub>33</sub>COOH</span>)</td>
+          <td>Chỉ có <b>1 nối đôi C=C</b> duy nhất ở giữa mạch (cách đầu CH<sub>3</sub> đúng 9C).</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-green">Omega–6</span></td>
+          <td><b>Linoleic acid</b><br><b>Arachidonic acid</b></td>
+          <td>18 : 2<br>20 : 4</td>
+          <td><span class="chem">C<sub>18</sub>H<sub>32</sub>O<sub>2</sub></span><br><span class="chem">C<sub>20</sub>H<sub>32</sub>O<sub>2</sub></span></td>
+          <td>Có <b>2 nối đôi C=C</b> (Linoleic) hoặc <b>4 nối đôi C=C</b>, nối đôi đầu tiên nằm ở C số 6 tính từ đuôi –CH<sub>3</sub>.</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-red">Omega–3</span><br><i>(Có nhiều trong cá hồi, cá trích)</i></td>
+          <td>
+            1. <b>ALA</b> (Alpha-linolenic acid)<br>
+            2. <b>EPA</b> (Eicosapentaenoic acid)<br>
+            3. <b>DHA</b> (Docosahexaenoic acid)
+          </td>
+          <td>
+            18 : 3<br>
+            20 : 5<br>
+            22 : 6
+          </td>
+          <td>
+            <span class="chem">C<sub>18</sub>H<sub>30</sub>O<sub>2</sub></span> (M=278)<br>
+            <span class="chem">C<sub>20</sub>H<sub>30</sub>O<sub>2</sub></span> (M=302)<br>
+            <span class="chem">C<sub>22</sub>H<sub>32</sub>O<sub>2</sub></span> (M=328)
+          </td>
+          <td>
+            Nối đôi C=C đầu tiên nằm rất sát đuôi –CH<sub>3</sub> (ở vị trí C số 3: <span class="chem">CH<sub>3</sub>–CH<sub>2</sub>–CH=CH–...</span>).<br>
+            • <b>ALA:</b> 3 nối đôi &nbsp;|&nbsp; <b>EPA:</b> 5 nối đôi (20C)<br>
+            • <b>DHA:</b> 6 nối đôi (22C, t<sub>nc</sub> = –44°C).
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p><i>*Lưu ý Câu 13 Phần II:</i> <b>Palmitoleic acid (16:1)</b> có 1 nối đôi ở vị trí C số 7 tính từ đầu –CH<sub>3</sub> nên thuộc loại <b>Omega–7</b>.</p>
+
+    <h3>C. Công thức Đếm Số Triester (Đồng phân Chất béo)</h3>
+    <ul>
+      <li>Cho glycerol phản ứng với <b>n acid béo khác nhau</b>, số triester tối đa tạo thành là: <b>n<sup>2</sup>(n + 1) / 2</b>.
+        <ul>
+          <li>Với <b>2 acid béo</b>: Tạo tối đa <b>6</b> triester. Nhưng nếu đề nói <i>"Thủy phân chất béo X thu được glycerol và <b>cả 2 muối</b> A, B"</i> (tức phân tử X bắt buộc chứa đồng thời cả A và B): có <b>4</b> công thức cấu tạo (gồm: A-A-B, A-B-A, B-B-A, B-A-B).</li>
+          <li>Nếu đề đã cho sẵn <b>tỉ lệ mol 2 muối là 1 : 2</b> (1 gốc A và 2 gốc B): chỉ có <b>2</b> công thức cấu tạo (A-B-B và B-A-B).</li>
+          <li>Nếu thủy phân X thu được <b>3 muối khác nhau</b> (1 gốc A : 1 gốc B : 1 gốc C): có <b>3</b> công thức cấu tạo (tùy thuộc gốc nào nằm ở giữa).</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- PHẦN 6 -->
+  <section id="sec6" class="searchable">
+    <h2>6. XÀ PHÒNG, CHẤT GIẶT RỬA & BIODIESEL</h2>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Tiêu chí</th>
+          <th>Xà phòng</th>
+          <th>Chất giặt rửa tổng hợp</th>
+          <th>Chất giặt rửa tự nhiên</th>
+        </tr>
+        <tr>
+          <td><b>Thành phần hóa học chính</b></td>
+          <td>Muối <b>sodium (Na<sup>+</sup>) hoặc potassium (K<sup>+</sup>) của acid béo</b> (từ C<sub>12</sub> đến C<sub>18</sub>):<br>
+          • <span class="chem">C<sub>15</sub>H<sub>31</sub>COONa / K</span><br>
+          • <span class="chem">C<sub>17</sub>H<sub>35</sub>COONa / K</span><br>
+          • <span class="chem">C<sub>17</sub>H<sub>33</sub>COONa / K</span><br>
+          • <span class="chem">CH<sub>3</sub>[CH<sub>2</sub>]<sub>10</sub>COOK</span>, <span class="chem">CH<sub>3</sub>[CH<sub>2</sub>]<sub>12</sub>COONa</span><br>
+          <i>(Bẫy: <span class="chem">CH<sub>3</sub>COONa</span>, <span class="chem">C<sub>3</sub>H<sub>7</sub>COONa</span>, chất béo <b>KHÔNG</b> phải là xà phòng).</i></td>
+          <td>Muối sodium của <b>alkylsulfate</b> hoặc <b>alkylbenzenesulfonate</b>:<br>
+          • <span class="chem">CH<sub>3</sub>[CH<sub>2</sub>]<sub>10</sub>CH<sub>2</sub>–OSO<sub>3</sub>Na</span> (Sodium lauryl sulfate)<br>
+          • <span class="chem">CH<sub>3</sub>[CH<sub>2</sub>]<sub>10</sub>CH<sub>2</sub>–C<sub>6</sub>H<sub>4</sub>–SO<sub>3</sub>Na</span> (Sodium dodecylbenzenesulfonate)<br>
+          • <span class="chem">CH<sub>3</sub>[CH<sub>2</sub>]<sub>15</sub>SO<sub>3</sub>Na</span></td>
+          <td>Hợp chất <b>Saponin</b> có trong <b>nước quả bồ kết, quả bồ hòn</b>.<br>
+          <i>(Bẫy: Nước bồ kết <b>không phải</b> là xà phòng dạng lỏng, cũng <b>không phải</b> chất giặt rửa tổng hợp).</i></td>
+        </tr>
+        <tr>
+          <td><b>Cấu tạo Phân tử</b></td>
+          <td>• <b>Đầu ưa nước (phân cực):</b> Nhóm <span class="chem">–COO<sup>–</sup>Na<sup>+</sup></span><br>
+          • <b>Đuôi kị nước (không phân cực):</b> Gốc hydrocarbon mạch dài, <b>không phân nhánh</b>.</td>
+          <td>• <b>Đầu ưa nước (phân cực):</b> Nhóm <span class="chem">–OSO<sub>3</sub><sup>–</sup>Na<sup>+</sup></span> hoặc <span class="chem">–SO<sub>3</sub><sup>–</sup>Na<sup>+</sup></span><br>
+          • <b>Đuôi kị nước:</b> Gốc hydrocarbon mạch dài.</td>
+          <td>Cũng có phần đầu ưa nước và đuôi kị nước.</td>
+        </tr>
+        <tr>
+          <td><b>Nguồn nguyên liệu sản xuất</b></td>
+          <td>Đun chất béo hoặc acid béo với kiềm (ngoài ra có thể tổng hợp từ alkane dầu mỏ).</td>
+          <td>Sản xuất chủ yếu từ <b>dầu mỏ (paraffin)</b>.</td>
+          <td>Có sẵn trong tự nhiên.</td>
+        </tr>
+        <tr>
+          <td><b>Khả năng dùng trong Nước cứng (<span class="chem">Ca<sup>2+</sup>, Mg<sup>2+</sup></span>)</b></td>
+          <td><b>KHÔNG dùng được</b> vì tạo kết tủa muối <span class="chem">(RCOO)<sub>2</sub>Ca / Mg</span> bám lên vải, làm mất tác dụng giặt rửa và mục vải.</td>
+          <td><b>DÙNG ĐƯỢC trong nước cứng</b> vì muối <span class="chem">Ca<sup>2+</sup>, Mg<sup>2+</sup></span> của gốc sulfate/sulfonate vẫn tan tốt (không kết tủa).</td>
+          <td>Dùng được với nước cứng, lành tính.</td>
+        </tr>
+        <tr>
+          <td><b>Tác động môi trường</b></td>
+          <td>Dễ bị vi sinh vật phân hủy → <b>Thân thiện với môi trường</b>.</td>
+          <td>Khó bị vi sinh vật phân hủy (nhất là gốc có nhánh/vòng) → <b>Gây ô nhiễm môi trường</b>.</td>
+          <td>An toàn, dễ phân hủy sinh học.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="box-trap">
+      <b>⚠️ 4 BẪY HAY SAI VỀ CƠ CHẾ GIẶT RỬA & BIODIESEL:</b><br>
+      1. <b>Cơ chế giặt rửa:</b> Khi cho vào nước, <b>đuôi kị nước</b> (gốc hydrocarbon) quay vào trong để <b>thâm nhập vào vết bẩn dầu mỡ</b>, còn <b>đầu ưa nước</b> (<span class="chem">–COO<sup>–</sup></span>) quay ra ngoài phía nước. <i>(Đề nói "xâm nhập vào vết bẩn nhờ gốc ưa nước –COO<sup>–</sup>" là <b>SAI</b>).</i><br>
+      2. <b>Chất giặt rửa có Enzyme Protease (Câu 20 Phần II):</b> Enzyme phân hủy sinh học tốt, thân thiện môi trường, hoạt động tối ưu ở khoảng <b>40°C</b> (tăng lên 60°C thì enzyme bị biến tính nên tốc độ phân hủy giảm mạnh từ 12,5 xuống 5,8 µmol/phút).<br>
+      3. <b>Dầu mỡ bôi trơn máy móc / Dầu diesel / Dầu hỏa:</b> Thành phần chính là <b>hydrocarbon</b> (chỉ chứa C, H lấy từ dầu mỏ), <b>KHÔNG phải là lipid/chất béo</b>, không phản ứng với NaOH.<br>
+      4. <b>Biodiesel (Diesel sinh học):</b> Là <b>methyl ester của acid béo (<span class="chem">RCOOCH<sub>3</sub></span>)</b>, điều chế bằng phản ứng <i>transester hóa</i>: <span class="chem">(RCOO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> + 3CH<sub>3</sub>OH (xt NaOH/KOH) → 3RCOOCH<sub>3</sub> + C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub></span>. Biodiesel có cùng nguyên tố (C, H, O) với chất béo (<b>khác</b> nguyên tố với diesel truyền thống), là nhiên liệu tái tạo (<b>không phải</b> nhiên liệu hóa thạch), kém bền trong acid/kiềm và <b>KHÔNG có tác dụng giặt rửa</b>.
+    </div>
+  </section>
+
+  <!-- PHẦN 7 -->
+  <section id="sec7" class="searchable">
+    <h2>7. THÍ NGHIỆM TRỌNG TÂM & GHÉP DỤNG CỤ (PHẦN II & III)</h2>
+
+    <h3>A. Thí nghiệm Điều chế Ester (Ethyl acetate & Isoamyl acetate)</h3>
+    <ul>
+      <li><b>Hóa chất trong bình cầu:</b> Alcohol nguyên chất + Carboxylic acid nguyên chất (tuyệt đối) + <span class="chem">H<sub>2</sub>SO<sub>4</sub> đặc</span> + vài viên <b>đá bọt</b> (giúp sôi đều, chống sôi bùng). <i>(Không dùng dung dịch acid 5% loãng vì nhiều nước sẽ làm cân bằng dịch chuyển theo chiều nghịch).</i></li>
+      <li><b>Vai trò <span class="chem">H<sub>2</sub>SO<sub>4</sub> đặc</span>:</b> Vừa làm <b>chất xúc tác</b>, vừa <b>hút nước</b> để tăng hiệu suất tạo ester.</li>
+      <li><b>Ống sinh hàn:</b> Dùng để <b>ngưng tụ hơi</b> chất lỏng, hạn chế thất thoát hóa chất. Nguyên tắc lắp nước làm lạnh: <b>Nước lạnh đi VÀO ở đầu thấp (1) và đi RA ở đầu cao (2)</b>.</li>
+      <li><b>Vai trò dung dịch <span class="chem">NaCl bão hòa</span>:</b> Làm tăng khối lượng riêng của lớp nước và giảm độ tan của ester → giúp <b>ester tách lớp nổi lên trên</b> rõ rệt hơn. <i>(Bẫy: NaCl thêm vào sau khi đun nên <b>không</b> làm tăng hiệu suất phản ứng).</i></li>
+      <li><b>Vai trò dung dịch <span class="chem">Na<sub>2</sub>CO<sub>3</sub> 10%</span> và <span class="chem">CaCl<sub>2</sub> khan</span>:</b> <span class="chem">Na<sub>2</sub>CO<sub>3</sub></span> dùng để <b>loại bỏ acid dư</b> lẫn trong ester; <span class="chem">CaCl<sub>2</sub> khan</span> dùng để <b>hút nước (làm khô)</b> ester trước khi chưng cất lại.</li>
+      <li><b>Phương pháp tách lấy Ester khỏi hỗn hợp nước:</b> Dùng <b>Phễu chiết (phương pháp chiết)</b> vì ester và nước là 2 chất lỏng không tan vào nhau. Ester nhẹ hơn nước (d ≈ 0,88 – 0,90 g/mL) nên luôn nằm ở <b>lớp chất lỏng phía trên</b>.</li>
+      <li><b>Ảnh hưởng của Nhiệt độ:</b> Hiệu suất đạt cực đại ở khoảng <b>75°C – 80°C</b>. Khi tăng nhiệt độ cao hơn (> 80°C), hiệu suất giảm vì chất đầu bay hơi và xảy ra phản ứng phụ (tách nước tạo ether/alkene, oxi hóa tạo SO<sub>2</sub>, C). Do đó dự đoán <i>"Nhiệt độ càng cao, hiệu suất càng cao"</i> là <b>SAI</b>.</li>
+    </ul>
+
+    <h3>B. Thí nghiệm Xà phòng hóa Chất béo</h3>
+    <ul>
+      <li><b>Trình tự 4 bước chuẩn (Câu 52 Phần III → Đáp án: 2341):</b>
+        <ol>
+          <li><b>(2)</b> Cho khoảng 2 mL dầu ăn (hoặc 1 gam mỡ lợn) vào bát sứ.</li>
+          <li><b>(3)</b> Thêm khoảng 4 – 5 mL dung dịch <span class="chem">NaOH 40%</span>.</li>
+          <li><b>(4)</b> Đun nóng sôi nhẹ, khuấy liên tục bằng đũa thủy tinh, <b>thỉnh thoảng thêm vài giọt nước cất</b> (để giữ thể tích không đổi, tránh hỗn hợp bị cạn khô).</li>
+          <li><b>(1)</b> Thêm 10 mL dung dịch <b>NaCl bão hòa</b>, khuấy nhẹ rồi để nguội → Xuất hiện <b>lớp chất rắn màu trắng nổi lên trên là muối sodium của acid béo (xà phòng)</b>, phần dung dịch phía dưới chứa glycerol.</li>
+        </ol>
+      </li>
+    </ul>
+
+    <h3>C. Quy tắc Ghép số Thứ tự Dụng cụ & Phản ứng (Câu 19, 40, 41 Phần III)</h3>
+    <div class="box-formula">
+      <b>1. Ghép Dụng cụ điều chế & tách Ethyl acetate:</b><br>
+      • <i>Ngưng tụ hơi chất lỏng:</i> <b>Ống sinh hàn</b><br>
+      • <i>Tách hai chất lỏng không trộn lẫn:</i> <b>Phễu chiết</b><br>
+      • <i>Thực hiện phản ứng ester hóa:</i> <b>Bình cầu có nhánh</b><br>
+      • <i>Cung cấp nhiệt cho phản ứng:</i> <b>Bếp điện (hoặc Đèn cồn)</b><br>
+      <i>→ Áp dụng Câu 19 Phần III:</i> Ống sinh hàn (1), Bếp điện (2), Bình cầu (3), Bình tam giác (4), Phễu chiết (5) ⇒ Dãy số: <b>1532</b>.<br>
+      <i>→ Áp dụng Câu 41 Phần III:</i> Bình cầu (1), Ống sinh hàn (2), Bình tam giác (3), Phễu chiết (4), Bếp điện (5) ⇒ Dãy số: <b>2415</b>.<br><br>
+      <b>2. Chuỗi sản xuất nhựa PET từ Cellulose (Câu 40 Phần III):</b><br>
+      Cellulose <span class="chem">--(1: Thủy phân)--&gt;</span> Glucose <span class="chem">--(2: Lên men)--&gt;</span> Ethanol <span class="chem">--(3: Tách nước)--&gt;</span> Ethylene <span class="chem">--(4: Oxi hóa)--&gt;</span> Ethylene glycol <span class="chem">--(5: Trùng ngưng với terephthalic acid)--&gt;</span> PET.<br>
+      <i>→ Thứ tự: Trùng ngưng (5) ; Thủy phân (1) ; Tách nước (3) ; Lên men (2) ⇒ Dãy số: <b>5132</b>.</i>
+    </div>
+  </section>
+
+  <!-- PHẦN 8 -->
+  <section id="sec8" class="searchable">
+    <h2>8. PHƯƠNG PHÁP GIẢI NHANH CÁC DẠNG TOÁN ĐIỂN HÌNH</h2>
+
+    <h3>Dạng 1: Tính Hiệu suất từ Hằng số Cân bằng K<sub>C</sub> (Câu 7, 33 Phần II)</h3>
+    <div class="eq">
+      CH<sub>3</sub>COOH (a mol) + C<sub>2</sub>H<sub>5</sub>OH (b mol) ⇌ CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> (x mol) + H<sub>2</sub>O (x mol)<br>
+      K<sub>C</sub> = x<sup>2</sup> / [(a – x)(b – x)] = 4
+    </div>
+    <ul>
+      <li><b>Trường hợp mẫu trong đề:</b> Cho <span class="chem">a = 1,25 mol</span> acetic acid + <span class="chem">b = 2 mol</span> ethanol (hoặc <span class="chem">a = 0,625 mol</span> và <span class="chem">b = 1 mol</span> — cùng tỉ lệ 5 : 8):<br>
+      Giải phương trình <span class="chem">x<sup>2</sup> / [(1,25 – x)(2 – x)] = 4</span> ⇒ <span class="chem">x = 1 mol</span>.<br>
+      Vì <span class="chem">a &lt; b</span> nên hiệu suất tính theo acid: <span class="chem">H = (1 / 1,25) × 100% = <b>80%</b></span>. <i>(Đề ghi 75% là <b>SAI</b>).</i></li>
+    </ul>
+
+    <h3>Dạng 2: Bài toán Chỉ số Acid (AV) & Sản xuất Xà phòng (Câu 16, 47 Phần II & Câu 14, 49, 54 Phần III)</h3>
+    <div class="box-formula">
+      • <b>Định nghĩa Chỉ số Acid (AV):</b> Là số <b>miligam (mg) KOH</b> (M = 56) cần để trung hòa hết acid béo tự do có trong <b>1 gam</b> chất béo.<br>
+      • <b>Công thức tính nhanh số mol Acid béo tự do trong m (gam) chất béo có chỉ số acid = a:</b>
+      <div class="eq">n<sub>acid tự do</sub> = n<sub>KOH trung hòa</sub> = (m<sub>chất béo (gam)</sub> × a) / (1000 × 56) &nbsp;(mol)</div>
+      • <b>Quan hệ số mol khi tác dụng với NaOH / KOH:</b><br>
+      &nbsp;&nbsp;+ <span class="chem">n<sub>Glycerol</sub> = n<sub>Triglyceride</sub></span> &nbsp;;&nbsp; <span class="chem">n<sub>H<sub>2</sub>O</sub> = n<sub>acid tự do</sub></span><br>
+      &nbsp;&nbsp;+ <span class="chem">n<sub>NaOH phản ứng</sub> = 3 × n<sub>Triglyceride</sub> + n<sub>acid tự do</sub></span><br>
+      • <b>Bảo toàn khối lượng (chỉ tính phần chất béo nguyên chất, trừ tạp chất trơ ra):</b>
+      <div class="eq">m<sub>chất béo nguyên chất</sub> + m<sub>kiềm (NaOH/KOH)</sub> = m<sub>muối</sub> + 92 × n<sub>Glycerol</sub> + 18 × n<sub>H<sub>2</sub>O</sub></div>
+    </div>
+    <ul>
+      <li><b>Ví dụ giải mẫu Câu 54 Phần III:</b> 1 kg (1000 gam) chất béo có chỉ số acid = 7, xà phòng hóa chỉ thu được muối stearate (gồm Tristearin M = 890 và Stearic acid M = 284):
+        <ul>
+          <li><span class="chem">n<sub>stearic acid</sub> = (1000 × 7) / (1000 × 56) = 0,125 mol</span> ⇒ <span class="chem">m<sub>stearic acid</sub> = 0,125 × 284 = 35,5 gam</span>.</li>
+          <li><span class="chem">m<sub>tristearin</sub> = 1000 – 35,5 = 964,5 gam</span> ⇒ <span class="chem">n<sub>tristearin</sub> = 964,5 / 890 mol</span>.</li>
+          <li>Tổng số mol NaOH: <span class="chem">n<sub>NaOH</sub> = 3 × (964,5 / 890) + 0,125 ≈ 3,37612 mol</span> ⇒ <span class="chem">m<sub>NaOH</sub> = 3,37612 × 40 ≈ <b>135 gam</b></span>.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Dạng 3: Nhiệt hóa học Đốt cháy Tristearin & Năng lượng Cơ thể (Câu 31, 60 Phần I, Câu 17 Phần II, Câu 43 Phần III)</h3>
+    <ul>
+      <li><b>Phương trình đốt cháy Tristearin (M = 890):</b>
+        <div class="eq">(C<sub>17</sub>H<sub>35</sub>COO)<sub>3</sub>C<sub>3</sub>H<sub>5</sub> (s) + 81,5 O<sub>2</sub> (g) → 57 CO<sub>2</sub> (g) + 55 H<sub>2</sub>O (l)</div>
+      </li>
+      <li><b>Biến thiên Enthalpy chuẩn:</b>
+        <div class="eq">Δ<sub>r</sub>H°<sub>298</sub> = 57 × (–393,5) + 55 × (–285,8) – (–2344) = <b>–35804,5 kJ</b></div>
+        <i>(Bẫy: Giá trị biến thiên enthalpy phải có dấu âm <b>–35804,5 kJ</b>; còn "lượng nhiệt giải phóng ra môi trường" của 1 mol là <b>35804,5 kJ</b>).</i>
+      </li>
+      <li><b>Nhiệt lượng tỏa ra từ 1 gam Tristearin:</b> <span class="chem">35804,5 / 890 ≈ <b>40,23 kJ/g</b></span> (hay <span class="chem">40230 kJ/kg</span>, bằng <span class="chem">40230 / 44000 ≈ <b>91,4%</b></span> so với dầu hỏa).</li>
+      <li><b>Tính khối lượng chất béo cần ăn mỗi ngày:</b>
+        <div class="eq">m<sub>chất béo</sub> = (Tổng năng lượng cần trong ngày × % năng lượng từ chất béo) / (Năng lượng 1 gam chất béo cung cấp)</div>
+        <i>Ví dụ Câu 31 Phần I:</i> <span class="chem">m = (9120 × 20%) / 38 = <b>48 gam</b></span>. &nbsp;|&nbsp; <i>Câu 60 Phần I:</i> <span class="chem">m = (13680 × 20%) / 38 = <b>72 gam</b></span>.
+      </li>
+    </ul>
+
+    <h3>Dạng 4: Một số Câu Vận dụng Đặc sắc Khác trong Phần III</h3>
+    <ul>
+      <li><b>Câu 11 (Chuẩn độ muối Mohr <span class="chem">FeSO<sub>4</sub>.(NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>.6H<sub>2</sub>O</span>, M = 392):</b>
+        <ul>
+          <li>Thể tích trung bình <span class="chem">KMnO<sub>4</sub> 0,015M</span> sau 3 lần chuẩn độ: <span class="chem">V<sub>tb</sub> = (9,4 + 9,2 + 9,3) / 3 = 9,3 mL = 0,0093 L</span>.</li>
+          <li>Bảo toàn electron cho 10 mL dung dịch Y: <span class="chem">n<sub>Fe<sup>2+</sup> (trong 10 mL)</sub> = 5 × n<sub>KMnO<sub>4</sub></sub> = 5 × 0,015 × 0,0093 = 6,975 × 10<sup>–4</sup> mol</span>.</li>
+          <li>Trong cả bình định mức 100 mL (gấp 10 lần): <span class="chem">n<sub>muối Mohr</sub> = 6,975 × 10<sup>–3</sup> mol</span> ⇒ <span class="chem">%m = (6,975 × 10<sup>–3</sup> × 392 / 3,0) × 100% ≈ <b>91,1%</b></span>.</li>
+        </ul>
+      </li>
+      <li><b>Câu 44 (Màng bọc sinh học Amylopectin acetate):</b>
+        <ul>
+          <li>Một mắt xích <span class="chem">C<sub>6</sub>H<sub>7</sub>O<sub>2</sub>(OH)<sub>3–n</sub>(OCOCH<sub>3</sub>)<sub>n</sub></span> có công thức thu gọn là <span class="chem">C<sub>6+2n</sub>H<sub>10+2n</sub>O<sub>5+n</sub></span>, khối lượng mol mắt xích là <span class="chem">M = 162 + 42n</span>.</li>
+          <li>Ta có: <span class="chem">%C = [12 × (6 + 2n)] / (162 + 42n) = 47,54% = 0,4754</span> ⇒ Giải ra <span class="chem"><b>n = 1</b></span>.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<!-- ========== AI CHAT WIDGET ========== -->
+<button class="ai-fab" id="aiFab" title="Trợ lý AI">🤖</button>
+
+<div class="ai-panel" id="aiPanel">
+  <div class="ai-header">
+    <span style="font-size:18px">🤖</span>
+    <span class="ai-title">Trợ lý Hóa học AI (Groq)</span>
+    <button id="aiSettingsBtn" title="Cài đặt API key">⚙️</button>
+    <button id="aiCloseBtn" title="Đóng">✕</button>
+  </div>
+
+  <div class="ai-settings" id="aiSettings">
+    <div>🔑 <b>Nhập Groq API key</b> (lấy miễn phí tại
+      <a href="https://console.groq.com/keys" target="_blank">console.groq.com</a>):
+    </div>
+    <input type="password" id="aiApiKey" placeholder="gsk_...">
+    <button id="aiSaveKey">Lưu</button>
+    <span id="aiKeyStatus" style="margin-left:8px;color:#047857"></span>
+  </div>
+
+  <div class="ai-quick" id="aiQuick">
+    <button data-q="Giải thích ngắn gọn cách đếm tỉ lệ mol NaOH khi xà phòng hóa ester của phenol.">Bẫy NaOH</button>
+    <button data-q="Phân biệt thủy phân ester trong acid và trong kiềm khác nhau thế nào?">Acid vs Kiềm</button>
+    <button data-q="Tóm tắt cách nhận diện Omega-3, -6, -9 trên công thức acid béo.">Omega 3-6-9</button>
+    <button data-q="Cho ví dụ tính chỉ số acid của chất béo và cách tính khối lượng NaOH cần dùng.">Chỉ số acid</button>
+  </div>
+
+  <div class="ai-msgs" id="aiMsgs"></div>
+
+  <div class="ai-input-wrap">
+    <textarea id="aiInput" rows="1" placeholder="Hỏi AI về Ester – Lipid..."></textarea>
+    <button id="aiSend">Gửi</button>
+  </div>
+</div>
+
+<button id="aiSelBtn">💡 Hỏi AI</button>
+
+<script>
+/* ========== SEARCH FILTER ========== */
+function filterContent() {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  const sections = document.querySelectorAll('.searchable');
+  sections.forEach(sec => {
+    const text = sec.innerText.toLowerCase();
+    sec.style.display = text.includes(input) ? '' : 'none';
+  });
+}
+
+/* ============================================================
+   TRỢ LÝ AI – GROQ API (streaming + retry)
+   ============================================================ */
+(() => {
+  // 🔥 Danh sách model Groq CÒN HOẠT ĐỘNG (2026)
+  // Nếu 1 model lỗi sẽ tự động thử model kế tiếp
+  const MODELS = [
+    "llama-3.3-70b-versatile",                    // Model mạnh, cân bằng tốt
+    "llama-3.1-8b-instant",                       // Nhẹ, nhanh, hạn mức cao (14.400/ngày)
+    "meta-llama/llama-4-scout-17b-16e-instruct",  // Llama 4 mới
+    "qwen/qwen3-32b",                             // Đa ngôn ngữ, tốt tiếng Việt
+    "openai/gpt-oss-120b"                         // GPT-OSS mạnh
+  ];
+  const API_URL = "https://api.groq.com/openai/v1/chat/completions";
+  const MAX_RETRIES = 2;
+  const RETRY_DELAYS = [1500, 3500];
+
+  const $ = id => document.getElementById(id);
+  const fab = $('aiFab'), panel = $('aiPanel');
+  const msgs = $('aiMsgs'), input = $('aiInput'), sendBtn = $('aiSend');
+  const settings = $('aiSettings'), apiKeyInput = $('aiApiKey'), keyStatus = $('aiKeyStatus');
+  const selBtn = $('aiSelBtn');
+
+  // ---- Ngữ cảnh trang ----
+  const PAGE_CONTEXT = (() => {
+    const clone = document.querySelector('.container').cloneNode(true);
+    clone.querySelectorAll('.ai-fab,.ai-panel,#aiSelBtn').forEach(n => n.remove());
+    return clone.innerText.replace(/\s+/g, ' ').slice(0, 14000);
+  })();
+
+  const SYSTEM_PROMPT = `Bạn là trợ lý học tập môn Hóa học lớp 12 chuyên sâu về ESTER – LIPID.
+Nhiệm vụ: trả lời NGẮN GỌN, CHÍNH XÁC, dựa trên ngữ cảnh sổ tay dưới đây. Ưu tiên tiếng Việt.
+Khi viết công thức, dùng ký hiệu text (CₙH₂ₙO₂, CH₃COOCH₃...). Khi cần nhấn mạnh, dùng **in đậm**.
+Nếu câu hỏi nằm ngoài phạm vi sổ tay, vẫn cố gắng trả lời theo kiến thức hóa phổ thông.
+
+--- NGỮ CẢNH SỔ TAY ---
+${PAGE_CONTEXT}`;
+
+  let history = [{ role: 'system', content: SYSTEM_PROMPT }];
+
+  // ---------- API key ----------
+  const KEY_LS = 'groq_api_key';
+  const getKey = () => localStorage.getItem(KEY_LS) || '';
+  const setKey = k => localStorage.setItem(KEY_LS, k.trim());
+
+  (function initKey() {
+    const k = getKey();
+    if (k) { apiKeyInput.value = k; keyStatus.textContent = '✓ Đã lưu'; }
+    else { settings.classList.add('open'); }
+  })();
+
+  $('aiSaveKey').onclick = () => {
+    const k = apiKeyInput.value.trim();
+    if (!k) { keyStatus.textContent = '⚠ Chưa nhập'; keyStatus.style.color = '#b91c1c'; return; }
+    setKey(k);
+    keyStatus.textContent = '✓ Đã lưu';
+    keyStatus.style.color = '#047857';
+    setTimeout(() => settings.classList.remove('open'), 500);
+  };
+
+  // ---------- Mở/đóng panel ----------
+  fab.onclick = () => {
+    panel.classList.add('open');
+    fab.classList.add('hidden');
+    input.focus();
+    if (msgs.children.length === 0) {
+      addMsg('bot', 'Xin chào 👋 Mình là trợ lý AI về **Ester – Lipid** (dùng Groq – tốc độ cao). Bạn có thể:\n• Gõ câu hỏi bất kỳ\n• Bôi đen đoạn văn bản trên trang rồi bấm **💡 Hỏi AI**\n• Dùng các **nút gợi ý** phía trên.');
+    }
+  };
+  $('aiCloseBtn').onclick = () => { panel.classList.remove('open'); fab.classList.remove('hidden'); };
+  $('aiSettingsBtn').onclick = () => settings.classList.toggle('open');
+
+  // ---------- Quick buttons ----------
+  document.querySelectorAll('#aiQuick button').forEach(b => {
+    b.onclick = () => {
+      input.value = b.dataset.q;
+      sendMessage();
+    };
+  });
+
+  // ---------- Hiển thị tin nhắn ----------
+  function addMsg(role, text) {
+    const div = document.createElement('div');
+    div.className = 'ai-msg ' + role;
+    div.innerHTML = `<div class="avatar">${role === 'user' ? '👤' : '🤖'}</div>
+                     <div class="bubble">${renderMd(text)}</div>`;
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+    return div.querySelector('.bubble');
+  }
+
+  function renderMd(t) {
+    return escapeHtml(t)
+      .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/^\s*[-*]\s+(.+)$/gm, '<li>$1</li>')
+      .replace(/(<li>[\s\S]*?<\/li>)/g, '<ul>$1</ul>')
+      .replace(/\n/g, '<br>');
+  }
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  // ---------- Hàm fetch có retry + fallback model ----------
+  async function fetchWithRetry(key, messages) {
+    let lastErr = null;
+
+    for (let mi = 0; mi < MODELS.length; mi++) {
+      const model = MODELS[mi];
+
+      for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+        try {
+          const res = await fetch(API_URL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${key}`
+            },
+            body: JSON.stringify({
+              model: model,
+              messages: messages,
+              temperature: 0.4,
+              max_tokens: 2000,
+              stream: true
+            })
+          });
+
+          if (res.ok) return { res, model };
+
+          const retryable = [429, 500, 502, 503, 504].includes(res.status);
+
+          if (retryable && attempt < MAX_RETRIES) {
+            const waitSec = (RETRY_DELAYS[attempt] || 3000) / 1000;
+            showStatus(`⏳ Server đang bận (${res.status}). Thử lại sau ${waitSec}s...`);
+            await new Promise(r => setTimeout(r, RETRY_DELAYS[attempt] || 3000));
+            continue;
+          }
+
+          const errTxt = await res.text();
+          lastErr = new Error(`HTTP ${res.status} – ${errTxt.slice(0, 200)}`);
+
+          // Lỗi 400 (model decommissioned) → đổi model luôn
+          if ((retryable || res.status === 400) && mi < MODELS.length - 1) {
+            showStatus(`🔄 Đổi model: ${MODELS[mi + 1]}...`);
+            await new Promise(r => setTimeout(r, 800));
+            break;
+          }
+          throw lastErr;
+
+        } catch (e) {
+          lastErr = e;
+          if (attempt < MAX_RETRIES) {
+            await new Promise(r => setTimeout(r, RETRY_DELAYS[attempt] || 3000));
+            continue;
+          }
+          if (mi < MODELS.length - 1) {
+            showStatus(`🔄 Đổi model: ${MODELS[mi + 1]}...`);
+            break;
+          }
+          throw lastErr;
+        }
+      }
+    }
+    throw lastErr || new Error('Tất cả model đều không phản hồi.');
+  }
+
+  function showStatus(text) {
+    const lastBubble = msgs.querySelector('.ai-msg:last-child .bubble');
+    if (lastBubble) {
+      lastBubble.innerHTML = `<span style="color:#b45309">${escapeHtml(text)}</span>`;
+      msgs.scrollTop = msgs.scrollHeight;
+    }
+  }
+
+  // ---------- Gửi tin nhắn ----------
+  let busy = false;
+  async function sendMessage() {
+    if (busy) return;
+    const text = input.value.trim();
+    if (!text) return;
+    const key = getKey();
+    if (!key) {
+      settings.classList.add('open');
+      addMsg('bot', '⚠️ Bạn chưa nhập **Groq API key**. Bấm ⚙️ trên cùng để nhập nhé.');
+      return;
+    }
+
+    input.value = '';
+    addMsg('user', text);
+    history.push({ role: 'user', content: text });
+
+    const bubble = addMsg('bot', '');
+    bubble.innerHTML = '<div class="ai-typing"><span></span><span></span><span></span></div>';
+
+    busy = true; sendBtn.disabled = true;
+
+    try {
+      const { res, model } = await fetchWithRetry(key, history);
+
+      const usingModel = `<div style="font-size:10px;color:#94a3b8;margin-bottom:4px">🤖 ${model}</div>`;
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+      let buffer = '', full = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
+        for (const line of lines) {
+          if (!line.startsWith('data:')) continue;
+          const data = line.slice(5).trim();
+          if (!data || data === '[DONE]') continue;
+          try {
+            const json = JSON.parse(data);
+            const part = json.choices?.[0]?.delta?.content;
+            if (part) {
+              full += part;
+              bubble.innerHTML = usingModel + renderMd(full);
+              msgs.scrollTop = msgs.scrollHeight;
+            }
+          } catch (_) { /* bỏ qua */ }
+        }
+      }
+
+      if (!full) bubble.textContent = '(Không có phản hồi)';
+      else history.push({ role: 'assistant', content: full });
+
+      // Giữ system prompt + 20 tin gần nhất
+      if (history.length > 22) history = [history[0], ...history.slice(-20)];
+
+    } catch (e) {
+      const msg = e.message || '';
+      let friendly = '';
+      if (msg.includes('429')) {
+        friendly = '⏸️ <b>Bạn đã gửi quá nhiều yêu cầu</b> (429). Đợi ~1 phút rồi thử lại nhé.';
+      } else if (msg.includes('401') || msg.includes('403')) {
+        friendly = '🔑 <b>Groq API key không hợp lệ</b> hoặc hết hạn. Bấm ⚙️ để nhập lại key.';
+      } else if (msg.includes('400')) {
+        friendly = '❌ <b>Lỗi 400 – Model không tồn tại hoặc đã bị khai tử</b>.<br>Tất cả model trong danh sách đều không khả dụng. Vui lòng thử lại sau.';
+      } else if (msg.includes('503')) {
+        friendly = '🚦 <b>Server Groq đang quá tải</b> (503). Thử lại sau 1–2 phút.';
+      } else if (msg.includes('Failed to fetch') || msg.includes('NetworkError')) {
+        friendly = '🌐 <b>Lỗi mạng</b>. Kiểm tra kết nối Internet và thử lại.';
+      } else {
+        friendly = `❌ Lỗi: ${escapeHtml(msg)}`;
+      }
+      bubble.innerHTML = `<span style="color:#b91c1c">${friendly}</span>`;
+    } finally {
+      busy = false; sendBtn.disabled = false;
+    }
+  }
+
+  sendBtn.onclick = sendMessage;
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+  });
+  input.addEventListener('input', () => {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 100) + 'px';
+  });
+
+  // ---------- Bôi đen text → nút "Hỏi AI" ----------
+  document.addEventListener('mouseup', e => {
+    if (panel.contains(e.target) || e.target === selBtn) return;
+    const sel = window.getSelection();
+    const txt = sel.toString().trim();
+    if (txt.length >= 5) {
+      const r = sel.getRangeAt(0).getBoundingClientRect();
+      selBtn.style.top  = (window.scrollY + r.top - 36) + 'px';
+      selBtn.style.left = (window.scrollX + r.left) + 'px';
+      selBtn.style.display = 'block';
+      selBtn.dataset.text = txt;
+    } else {
+      selBtn.style.display = 'none';
+    }
+  });
+  document.addEventListener('mousedown', e => {
+    if (e.target !== selBtn) selBtn.style.display = 'none';
+  });
+  selBtn.onclick = () => {
+    const t = selBtn.dataset.text || '';
+    selBtn.style.display = 'none';
+    panel.classList.add('open');
+    fab.classList.add('hidden');
+    input.value = `Giải thích đoạn sau cho mình: "${t.slice(0, 400)}"`;
+    input.focus();
+  };
+})();
+</script>
+
+</body>
+</html>
